@@ -20,6 +20,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://localhost:5173",
+        "https://stock-analyzer-agent.vercel.app"
     ],
     allow_credentials=False,
     allow_methods=["GET", "POST"],
