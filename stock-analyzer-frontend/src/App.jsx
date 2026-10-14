@@ -21,7 +21,7 @@ import {
 import "./App.css";
 
 const API_BASE_URL =
-  import.meta.env.API_BASE_URL || "http://127.0.0.1:8000";
+  import.meta.env.API_BASE_URL || "https://stock-analyzer-agent.onrender.com";
 
 const PERIODS = [
   { label: "1 Week", value: "1wk" },
