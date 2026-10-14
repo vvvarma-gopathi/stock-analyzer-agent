@@ -3,22 +3,22 @@ import asyncio
 
 from fastapi import APIRouter, HTTPException
 
-from schemas import (
+from app.schemas import (
     StockResearchRequest,
     StockResearchResponse,
 )
 import logging
 
-from services.stock_service import (
+from app.services.stock_service import (
     get_stock_data,
     StockDataError,
 )
-from services.news_service import (
+from app.services.news_service import (
     get_stock_news,
     NewsDataError,
 )
-from services.technical_service import calculate_indicators
-from services.analysis_service import analyze_stock
+from app.services.technical_service import calculate_indicators
+from app.services.analysis_service import analyze_stock
 
 
 router = APIRouter(prefix="/api/v1/stocks", tags=["Stocks"])

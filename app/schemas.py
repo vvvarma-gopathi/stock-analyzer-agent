@@ -1,7 +1,7 @@
 
 from typing import Any
 from pydantic import BaseModel, Field, field_validator
-from schema_analy import StockAnalysis
+from app.schema_analy import StockAnalysis
 
 class StockResearchRequest(BaseModel):
     symbol: str = Field(

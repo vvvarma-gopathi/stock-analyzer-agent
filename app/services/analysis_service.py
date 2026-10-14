@@ -7,8 +7,8 @@ from typing import Any
 from google import genai
 from google.genai import types
 
-from config import settings
-from schema_analy import StockAnalysis
+from app.config import settings
+from app.schema_analy import StockAnalysis
 
 
 logger = logging.getLogger(__name__)

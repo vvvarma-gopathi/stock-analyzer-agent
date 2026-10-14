@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 
 import httpx
 
-from config import settings
+from app.config import settings
 
 
 BASE_URL = "https://api.twelvedata.com"
